@@ -18,9 +18,6 @@ jobs:
       - name: Install the required dependencies
         run: yarn install
 
-      - name: nodemon install on server
-        run: npm install -g nodemon
-
       - name: testing the application
         run: yarn test
 
