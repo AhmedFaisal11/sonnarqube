@@ -1,0 +1,16 @@
+{
+  "name": "sonarqube-with-github-actions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha ./Test --exit --timeout 10000 "
+  },
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "express": "^4.17.2",
+    "mocha": "^9.1.4",
+    "morgan": "^1.10.0"
+  }
+}
