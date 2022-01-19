@@ -10,19 +10,14 @@ jobs:
       - name: Checkout the repo to ubuntu
         uses: actions/checkout@v2
 
-      - name: setup node enviroment 
-        uses: actions/setup-node@v2
-        with:
-          node-version: '17.3.0 '
-      
       - name: Install the required dependencies
-        run: npm install
+        run: yarn install
 
       - name: testing the application
-        run: npm test
+        run: yarn test
 
       - name: Start the application
-        run: npm start
+        run: yarn start
     # runs-on: ubuntu-latest
     # steps:
     #   - uses: actions/checkout@v2
