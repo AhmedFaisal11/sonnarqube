@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://json.schemastore.org/github-workflow.json": "file:///home/onii-chan/sonarqube-with-github-actions/.github/workflows/build.yaml"
+    }
+}

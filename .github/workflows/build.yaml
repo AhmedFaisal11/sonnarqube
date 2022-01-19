@@ -1,4 +1,4 @@
-name: Build
+name: application build and test
 on:
   push:
     branches:
@@ -12,9 +12,12 @@ jobs:
 
       - name: Install the required dependencies
         run: yarn install
-      
+
       - name: testing the application
         run: yarn test
+
+      - name: show ip address on console
+        run: ip addr show
     # runs-on: ubuntu-latest
     # steps:
     #   - uses: actions/checkout@v2
