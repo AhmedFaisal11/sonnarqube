@@ -16,13 +16,13 @@ jobs:
           node-version: '17'
       
       - name: Install the required dependencies
-        run: yarn install
+        run: npm install
 
       - name: testing the application
-        run: yarn test
+        run: npm test
 
       - name: Start the application
-        run: yarn start
+        run: npm start
     # runs-on: ubuntu-latest
     # steps:
     #   - uses: actions/checkout@v2
