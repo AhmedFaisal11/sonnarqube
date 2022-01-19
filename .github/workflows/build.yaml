@@ -16,8 +16,8 @@ jobs:
       - name: testing the application
         run: yarn test
 
-      - name: show ip address on console
-        run: ip addr show
+      - name: Start the application
+        run: yarn start
     # runs-on: ubuntu-latest
     # steps:
     #   - uses: actions/checkout@v2
