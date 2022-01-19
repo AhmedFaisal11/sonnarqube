@@ -10,8 +10,16 @@ jobs:
       - name: Checkout the repo to ubuntu
         uses: actions/checkout@v2
 
+      - name: setup node enviroment 
+        uses: actions/setup-node@v2
+        with:
+          node-version: '17'
+      
       - name: Install the required dependencies
         run: yarn install
+
+      - name: nodemon install on server
+        run: npm install -g nodemon
 
       - name: testing the application
         run: yarn test
